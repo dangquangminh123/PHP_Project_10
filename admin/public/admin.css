@@ -1,0 +1,141 @@
+/* Css Modules pages */
+
+.active {
+    color: #e84118;
+    font-weight: 700;
+}
+
+.page_title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.draft {
+    color: #fed330;
+    font-weight: 800;
+}
+
+.published {
+    color: #e74c3c;
+    font-weight: 800;
+}
+
+.pending {
+    color: #45aaf2;
+    font-weight: 800;
+}
+
+.archived {
+    color: #4b6584;
+    font-weight: 800;
+}
+
+.author {
+    color: #F79F1F;
+    font-weight: 900;
+}
+
+.delete_page i {
+    color: #C4E538;
+}
+
+.delete_page:hover i {
+    color: #C4E538;
+    font-weight: 700;
+}
+
+.edit_page i {
+    color: #17c0eb;
+}
+
+.edit_page:hover i {
+    color: #18dcff;
+    font-weight: 600;
+}
+
+
+/* Modules Post */
+
+.category_name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: #EA2027;
+    font-weight: bold;
+}
+
+.categoryslug {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: #FFC312;
+}
+
+.grant_category {
+    color: #ff4d4d;
+}
+
+.level_parent,
+.level_children {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.level_parent {
+    color: #0be881;
+}
+
+.level_children {
+    color: #34e7e4;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.postslug {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* -moz-line-clamp: 1;
+    -o-line-clamp: 1; */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tb-excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* -moz-line-clamp: 2;
+    -o-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.tb-content {
+     /* width: 35%; */
+     display: -webkit-box;
+     -webkit-line-clamp: 5;
+     /* -moz-line-clamp: 2;
+     -o-line-clamp: 2; */
+     -webkit-box-orient: vertical;
+     -moz-box-orient: vertical;
+     -o-box-orient: vertical;
+     max-height: 100%;
+     overflow: hidden;
+}
+
+.tb-images {
+    height: auto;
+    width: 180px;
+    object-fit: contain;
+    display: block;
+}
+

@@ -1,0 +1,73 @@
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header, #footer {
+    background: #029ef3;
+}
+
+/* Biến thể header 1 */
+#header.mod-page {
+    background: #f3a902;
+}
+
+/* Biến thể header 2*/
+#header.mod-product {
+    background: #000000;
+}
+
+#header {
+    text-align: center;
+    position: relative;
+} 
+
+#logo {
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+#user-login {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+
+#header.mod-post {
+    background: #029ef3;
+}
+
+ul#main-menu {
+    text-align: center;
+}
+
+ul#main-menu li {
+    display: inline-block;
+}
+
+ul#main-menu li a {
+    padding: 8px 15px;
+    display: block;
+    color: #fff;
+}
+
+#content {
+    min-height: 600px;
+    padding: 20px 0px;
+}
+
+#footer {
+    color: #fff;
+    text-align: center;
+    padding: 8px 0px;
+}
