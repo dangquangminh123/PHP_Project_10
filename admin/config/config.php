@@ -13,7 +13,7 @@ date_default_timezone_set("Asia/Ho_Chi_Minh");
  * 
  */
 
-$config['base_url'] = "http://localhost:8080/unitop/project_ismart/admin/";
+$config['base_url'] = "http://localhost:8080/ismart_unitop/admin/";
 
 
 $config['default_module'] = 'products';

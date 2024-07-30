@@ -840,62 +840,69 @@ function indexAction()
 {
     load("helper", "format", "users", "data");
     $time = date("d/m/Y h:m:s");
-
-    $productProduct = isset($_GET['products_status']) ? (string) $_GET['products_status'] : '';
-    // Số lượng bản ghi trên trang
-    $num_per_products = 11;
-    $page = isset($_GET["page"]) ? (int) $_GET["page"] : 1;
-    $start = ($page - 1) * $num_per_products;
-    if ($productProduct !== '') {
-        $num_row_product = get_row_product_status($productProduct);
-        $list_product = get_paginate_product($start, $num_per_products, "`product_status` = '$productProduct'");
-    } else {
-        $num_row_product = get_row_product();
-        $list_product = get_paginate_product($start, $num_per_products, '');
-    }
-
-    // Tổng số bản ghi sản phẩm
-    $total_product = $num_row_product;
-
-    // Tổng số sản phẩm
-    $num_product = ceil($total_product / $num_per_products);
-
-    foreach ($list_product as &$products) {
-        $products[
-            "url_update"
-        ] = "?mod=products&action=UpdateProduct&product_id={$products["product_id"]}";
-        $products[
-            "url_delete"
-        ] = "?mod=products&action=DeleteProduct&product_id={$products["product_id"]}";
-    }
-    $product_images = get_thumb_product_images();
     $info_user = user_login();
-    $user_product = get_list_product_user();
-
-    $category_product = get_list_category_products();
     $data_user = get_user_by_username($info_user);
     $user_id = $data_user["user_id"];
-    $all_product = get_list_product();
-    $list_product_active = get_list_product_status('active');
-    $list_product_inactive = get_list_product_status('inactive');
-    $list_product_outofstock = get_list_product_status('out_of_stock');
-
-    // show_array($list_product);
-    $data = [
-        "all_product" => $all_product,
-        "list_product" => $list_product,
-        "page" => $page,
-        "num_row_product" => $num_row_product,
-        "user_product" => $user_product,
-        "product_images" => $product_images,
-        "category_product" => $category_product,
-        "num_product" => $num_product,
-        "total_product" => $total_product,
-        "list_product_active" => $list_product_active,
-        "list_product_inactive" => $list_product_inactive,
-        "list_product_outofstock" => $list_product_outofstock,
-    ];
-    load_view("index", $data);
+    if ($info_user) {
+        $productProduct = isset($_GET['products_status']) ? (string) $_GET['products_status'] : '';
+        // Số lượng bản ghi trên trang
+        $num_per_products = 11;
+        $page = isset($_GET["page"]) ? (int) $_GET["page"] : 1;
+        $start = ($page - 1) * $num_per_products;
+        if ($productProduct !== '') {
+            $num_row_product = get_row_product_status($productProduct);
+            $list_product = get_paginate_product($start, $num_per_products, "`product_status` = '$productProduct'");
+        } else {
+            $num_row_product = get_row_product();
+            $list_product = get_paginate_product($start, $num_per_products, '');
+        }
+    
+        // Tổng số bản ghi sản phẩm
+        $total_product = $num_row_product;
+    
+        // Tổng số sản phẩm
+        $num_product = ceil($total_product / $num_per_products);
+    
+        foreach ($list_product as &$products) {
+            $products[
+                "url_update"
+            ] = "?mod=products&action=UpdateProduct&product_id={$products["product_id"]}";
+            $products[
+                "url_delete"
+            ] = "?mod=products&action=DeleteProduct&product_id={$products["product_id"]}";
+        }
+        $product_images = get_thumb_product_images();
+        $info_user = user_login();
+        $user_product = get_list_product_user();
+    
+        $category_product = get_list_category_products();
+        $data_user = get_user_by_username($info_user);
+        $user_id = $data_user["user_id"];
+        $all_product = get_list_product();
+        $list_product_active = get_list_product_status('active');
+        $list_product_inactive = get_list_product_status('inactive');
+        $list_product_outofstock = get_list_product_status('out_of_stock');
+    
+        // show_array($list_product);
+        $data = [
+            "all_product" => $all_product,
+            "list_product" => $list_product,
+            "page" => $page,
+            "num_row_product" => $num_row_product,
+            "user_product" => $user_product,
+            "product_images" => $product_images,
+            "category_product" => $category_product,
+            "num_product" => $num_product,
+            "total_product" => $total_product,
+            "list_product_active" => $list_product_active,
+            "list_product_inactive" => $list_product_inactive,
+            "list_product_outofstock" => $list_product_outofstock,
+        ];
+        load_view("index", $data);
+     } else {
+        redirect("?mod=users&action=login");
+    }
+    
 }
 
 // function AddImagesProductAction() {

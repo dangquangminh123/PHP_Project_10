@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2024 at 03:39 PM
+-- Generation Time: Jul 30, 2024 at 04:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -57,11 +57,19 @@ CREATE TABLE `tbl_images` (
 --
 
 INSERT INTO `tbl_images` (`image_id`, `image_url`, `file_name`, `file_size`, `user_id`, `created_at`) VALUES
-(466, 'public/uploads/product/4ed935c21a53c59de986af2f4d12578b.jpg', '4ed935c21a53c59de986af2f4d12578b.jpg', 7985, 4, '2024-07-28 15:38:08'),
-(467, 'public/uploads/product/5dee15ab183f9dc6dddeb38ea586aabc.jpg', '5dee15ab183f9dc6dddeb38ea586aabc.jpg', 92290, 4, '2024-07-28 15:38:08'),
-(471, 'public/uploads/product/cuoi_te_chongmong.jpg', 'cuoi_te_chongmong.jpg', 27516, 4, '2024-07-28 15:38:58'),
-(472, 'public/uploads/product/cuoihe.png', 'cuoihe.png', 39093, 4, '2024-07-28 15:38:58'),
-(473, 'public/uploads/product/cuoiliecnhin.jpg', 'cuoiliecnhin.jpg', 35841, 4, '2024-07-28 15:38:58');
+(1, 'public/uploads/product/asus_x441na.png', 'asus_x441na.png', 29716, 4, '2024-07-30 14:00:14'),
+(2, 'public/uploads/product/asus_X441NA2.jpg', 'asus_X441NA2.jpg', 29276, 4, '2024-07-30 14:00:14'),
+(3, 'public/uploads/product/asus_X441NA2.png', 'asus_X441NA2.png', 39673, 4, '2024-07-30 14:00:14'),
+(4, 'public/uploads/product/laptop_asus_X441NA.png', 'laptop_asus_X441NA.png', 38483, 4, '2024-07-30 14:00:14'),
+(5, 'public/uploads/product/cuoihe.png', 'cuoihe.png', 39093, 4, '2024-07-30 14:00:49'),
+(6, 'public/uploads/product/cuoiliecnhin.jpg', 'cuoiliecnhin.jpg', 35841, 4, '2024-07-30 14:00:49'),
+(7, 'public/uploads/product/cuoimim.jpg', 'cuoimim.jpg', 60089, 4, '2024-07-30 14:00:49'),
+(8, 'public/uploads/product/cuoito.jpg', 'cuoito.jpg', 10929, 4, '2024-07-30 14:00:49'),
+(17, 'public/uploads/product/mafex_tobey.jpg', 'mafex_tobey.jpg', 89687, 4, '2024-07-30 14:06:39'),
+(18, 'public/uploads/product/mafex_tobey2.jpg', 'mafex_tobey2.jpg', 149338, 4, '2024-07-30 14:06:39'),
+(19, 'public/uploads/product/mafex_tobey3.jpg', 'mafex_tobey3.jpg', 87006, 4, '2024-07-30 14:06:39'),
+(20, 'public/uploads/product/mafex_tobey4.jpg', 'mafex_tobey4.jpg', 116711, 4, '2024-07-30 14:06:39'),
+(21, 'public/uploads/product/mafex_tobey5.jpg', 'mafex_tobey5.jpg', 98462, 4, '2024-07-30 14:06:39');
 
 -- --------------------------------------------------------
 
@@ -255,7 +263,8 @@ CREATE TABLE `tbl_products` (
 --
 
 INSERT INTO `tbl_products` (`product_id`, `product_name`, `product_slug`, `product_desc`, `product_details`, `product_price`, `stock_quantity`, `is_featured`, `product_status`, `user_id`, `category_id`, `created_at`, `updated_at`) VALUES
-(48, 'Con mèo ami bụng ệ', 'con-meo-ami-bung-e', '<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up o', '<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.</p>\r\n', 20000, 2, 0, 'active', 4, 11, '2024-07-28 15:19:54', '2024-07-28 15:19:54');
+(1, 'LAPTOP ASUS X441NA', 'laptop-asus-x441na', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a ', '<p>Cấu h&igrave;nh Laptop Asus X441NA N4200/4GB/500GB/Win10/(GA070T)</p>\r\n\r\n<ul>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>CPU:</p>\r\n\r\n	<p>PentiumN42001.1GHz</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>RAM:</p>\r\n\r\n	<p>DDR3L (Onboard)1600 MHz</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>Ổ cứng:</p>\r\n\r\n	<p>HDD 500 GB</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>M&agrave;n h&igrave;nh:</p>\r\n\r\n	<p>14&quot;HD (1366 x 768)</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>Card m&agrave;n h&igrave;nh:</p>\r\n\r\n	<p>Card t&iacute;ch hợpIntel HD Graphics</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>Cổng kết nối:</p>\r\n\r\n	<p>VGA (D-Sub)USB Type-CUSB 3.0USB 2.0LAN (RJ45)HDMI</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>Hệ điều h&agrave;nh:</p>\r\n\r\n	<p>Windows 10 Home SL</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>Thiết kế:</p>\r\n\r\n	<p>Vỏ nhựa</p>\r\n	</li>\r\n	<li data-index=\"0\" data-prop=\"0\">\r\n	<p>K&iacute;ch thước, khối lượng:</p>\r\n\r\n	<p>D&agrave;y D&agrave;y 27.6 mm</p>\r\n	</li>\r\n</ul>\r\n', 21000000, 2, 0, 'active', 4, 21, '2024-07-30 14:00:18', '2024-07-30 14:00:18'),
+(3, 'MAFEX SPIDER MAN FRIENDLY NEIGHBORHOOD', 'mafex-spider-man-friendly-neighborhood', '<p>mafex medicomtoys spider man no way home tobey</p>\r\n', '<p><img src=\"https://www.medicomtoy.co.jp/WI/upimage/221224_jcjakt_0003_logo.jpg\" /></p>\r\n\r\n<p><b><font><font>Cả h&igrave;nh thức tốt nhất v&agrave; phạm vi chuyển động vượt trội!</font></font><br />\r\n<font><font>Nh&acirc;n vật h&agrave;nh động mạnh nhất từ ​​​​trước đến nay!</font></font></b></p>\r\n\r\n<p><font><font>Dự kiến ​​ph&aacute;t h&agrave;nh v&agrave;o th&aacute;ng 12 năm 2024</font></font><br />\r\n<font><font>MAFEX No.241</font></font><br />\r\n<font><font>MAFEX FRIENDLY NEIGHBORHOOD SPIDER-MAN</font></font><br />\r\n<br />\r\n<font><font>Gi&aacute; b&aacute;n lẻ tham khảo &yen;12.980 (đ&atilde; bao gồm thuế)</font></font><br />\r\n<br />\r\n<font><font>Sản xuất nguy&ecirc;n mẫu đầu: Kyoichi Shimazaki</font></font><br />\r\n<font><font>Sản xuất nguy&ecirc;n mẫu: Masato Ohata &amp; PERFECT-STUDIO</font></font><br />\r\n<br />\r\n<font><font>●Tổng chiều cao khoảng 150mm</font></font><br />\r\n<font><font>●``Spider -Man: No Way&#39;&#39;</font></font><br />\r\n<font><font>　&ldquo;Người nhện th&acirc;n thiện với khu phố&rdquo; hiện đ&atilde;</font></font><br />\r\n<font><font>　!</font></font><br />\r\n<font><font>-3 loại bộ phận đầu/bộ phận web,</font></font><br />\r\n<font><font>　bộ phận cổng ma thuật, v.v./bao</font></font><br />\r\n<font><font>　gồm gi&aacute; đỡ h&igrave;nh di động!</font></font><br />\r\n<br />\r\n<font><font>*Đ&acirc;y l&agrave; mẫu đang được gi&aacute;m s&aacute;t.</font></font><br />\r\n<font><font>　N&oacute; c&oacute; thể kh&aacute;c với sản phẩm được ph&aacute;t h&agrave;nh.</font></font><br />\r\n<br />\r\n<font><font>(C) 2024 CTMG.</font></font><br />\r\n<font><font>(C) 2024 MARVEL ĐẢM BẢO TẤT CẢ QUYỀN.</font></font></p>\r\n', 2100000, 2, 0, 'active', 4, 16, '2024-07-30 14:06:43', '2024-07-30 14:06:43');
 
 -- --------------------------------------------------------
 
@@ -325,9 +334,15 @@ CREATE TABLE `tbl_product_images` (
 --
 
 INSERT INTO `tbl_product_images` (`product_image_id`, `product_id`, `image_id`, `pin`) VALUES
-(304, 48, 471, '1'),
-(305, 48, 472, ''),
-(306, 48, 473, '');
+(1, 1, 1, '0'),
+(2, 1, 2, '0'),
+(3, 1, 3, '1'),
+(4, 1, 4, '0'),
+(26, 3, 17, '1'),
+(27, 3, 18, ''),
+(28, 3, 19, ''),
+(29, 3, 20, ''),
+(30, 3, 21, '');
 
 -- --------------------------------------------------------
 
@@ -478,7 +493,7 @@ ALTER TABLE `tbl_customers`
 -- AUTO_INCREMENT for table `tbl_images`
 --
 ALTER TABLE `tbl_images`
-  MODIFY `image_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=474;
+  MODIFY `image_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `tbl_orders`
@@ -514,7 +529,7 @@ ALTER TABLE `tbl_post_categories`
 -- AUTO_INCREMENT for table `tbl_products`
 --
 ALTER TABLE `tbl_products`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_product_categories`
@@ -526,7 +541,7 @@ ALTER TABLE `tbl_product_categories`
 -- AUTO_INCREMENT for table `tbl_product_images`
 --
 ALTER TABLE `tbl_product_images`
-  MODIFY `product_image_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=307;
+  MODIFY `product_image_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `tbl_sliders`
